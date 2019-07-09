@@ -10,7 +10,8 @@
 	<typeAliases>
 		<package name="com.atguigu.crud.bean"/>
 	</typeAliases>
-	
+
+	<!-- 下面的拦截器是按从上往下的顺序执行的 -->
 	<plugins>
 		<!-- 分页插件 -->
 		<plugin interceptor="com.github.pagehelper.PageInterceptor">
