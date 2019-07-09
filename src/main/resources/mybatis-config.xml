@@ -12,9 +12,14 @@
 	</typeAliases>
 	
 	<plugins>
+		<!-- 分页插件 -->
 		<plugin interceptor="com.github.pagehelper.PageInterceptor">
 			<!--分页参数合理化  -->
 			<property name="reasonable" value="true"/>
+		</plugin>
+		<!-- 自定义的sql拦截器 -->
+		<plugin interceptor="com.atguigu.crud.interceptor.SQLStatsInterceptor">
+			<property name="dialect" value="mysql22test" />
 		</plugin>
 	</plugins>
 
