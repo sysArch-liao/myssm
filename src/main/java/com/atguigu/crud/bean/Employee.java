@@ -14,7 +14,7 @@ public class Employee {
 
     private Integer dId;
 
-    //  希望查询员工的同时部门信息也是查询好的
+    /**  希望查询员工的同时部门信息也是查询好的 */
     private Department department;
 
     public Employee() {
